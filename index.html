@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cryptomania</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="index.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#" class="title">Cryptomafia</a>
+            <a href="#cryptomarket" class="watchlist"><i class="fa-regular fa-star notChange"></i> Watchlist</a>
+            <a href="#cryptomarket" class="market">Market</a>
+            <a href="#crypto-converter" class="converter">Currency Converter</a>
+            <i class="fa-solid fa-bars passive"></i>
+        </nav>
+        <div class="message"><img src="images/bitcoin_icon.png" alt="Bitcoin Image" class="header-img"> TRACK, TRADE AND BE <img src="images/ehtereum_icon.png" alt="Ethereum Image" class="header-img"><br /><span id="mafia">CRYPTO TRADING MAFIA</span></div>
+        <div class="header-market">
+            <div class="market-loader"></div>
+            <a href="#cryptomarket" class="new-header-data passive">See Market</a>
+        </div>
+    </header>
+    <main>
+        <div class="market-container" id="cryptomarket">
+            <div class="main-title">Cryptocurrency Market</div>
+            <div class="container">
+                <div class="container-header">
+                    <div class="star"></div>
+                    <div>Coin</div>
+                    <div>Price</div>
+                    <div>24h Change</div>
+                    <div>Market Cap</div>
+                </div>
+                <div class="container-body"></div>
+            </div>
+            <div class="pages-container">
+                <div class="pages">
+                    <a href="#cryptomarket" class="page one">1</a>
+                    <a href="#cryptomarket" class="page two">2</a>
+                    <a href="#cryptomarket" class="page three">3</a>
+                    <a href="#cryptomarket" class="page four">4</a>
+                    <a href="#cryptomarket" class="page five">5</a>
+                </div>
+            </div>
+        </div>
+        <div class="market-converter" id="crypto-converter">
+            <div class="converter-title">Cryptocurrency Converter Calculator</div>
+            <div class="calculator">
+                <input type="number" placeholder="Enter Amount to Convert" min="1" value="1" id="amount">
+                <div class="currencies">
+                    <select name="fromCurrency" id="fromCurrency">
+                        <option value="BTC" selected>Bitcoin (BTC)</option>
+                        <option value="ETH">Ethereum (ETH)</option>
+                        <option value="USD">Tether (USDT)</option>
+                        <option value="BNB">BNB (BNB)</option>
+                        <option value="XRP">XRP (XRP)</option>
+                        <option value="SOL">Solona (SOL)</option>
+                        <option value="ADA">Cardano (ADA)</option>
+                        <option value="DOGE">Dogecoin (DOGE)</option>
+                        <option value="MATIC">Polygon (MATIC)</option>
+                    </select>
+                    <div class="arrow-container">
+                        <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                    </div>
+                    <select name="toCurrency" id="toCurrency">
+                        <option value="BTC">Bitcoin (BTC)</option>
+                        <option value="ETH">Ethereum (ETH)</option>
+                        <option value="USD" selected>Tether (USDT)</option>
+                        <option value="BNB">BNB (BNB)</option>
+                        <option value="XRP">XRP (XRP)</option>
+                        <option value="SOL">Solona (SOL)</option>
+                        <option value="ADA">Cardano (ADA)</option>
+                        <option value="DOGE">Dogecoin (DOGE)</option>
+                        <option value="MATIC">Polygon (MATIC)</option>
+                    </select>
+                </div>
+                <div class="price-container">
+                    <div class="price">
+                        <div class="first-price"></div>
+                        <div>=</div>
+                        <div class="price-loader"></div>
+                        <div class="second-price"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="join">Join us</div>
+        <div class="platforms">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-youtube"></i>
+        </div>
+        <div class="agreements">
+            <div class="agreement">Privacy</div>
+            <div class="agreement">Use of terms</div>
+        </div>
+        <div class="copyright-container">
+            <div class="copyright">&copy; 2023 Crypto Trading Mafia. All rights reserved.</div>
+        </div>
+    </footer>
+    <div class="new-menu">
+        <div class="menu-header">
+            <div>Cryptomafia</div>
+            <i class="fa-regular fa-x"></i>
+        </div>    
+        <a href="#cryptomarket" class="menu-nav" id="watch"><i class="fa-regular fa-star notChange"></i> Watchlist</a>    
+        <a href="#cryptomarket" class="menu-nav">Market</a>
+        <a href="#crypto-converter" class="menu-nav">Currency Converter</a>
+    </div>
+</body>
+</html>
